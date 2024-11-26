@@ -4,6 +4,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    justify-content: center;
+    justify-items: center;
 }
 
 body{
@@ -13,7 +15,7 @@ body{
 
   .navbar{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     align-items: center;
     padding: 20px;
     /* position: fixed; */
@@ -36,6 +38,7 @@ body{
     height: 52px;
     display: flex;
     justify-content: center;
+    cursor: alias;
   }
 
   .right-sidebar{
@@ -43,13 +46,12 @@ body{
     align-items: center;
     justify-content: space-between;
     width: 33.33%;
+    cursor: pointer;
     /* height: 100px; */
   }
 
-  .get-in-touch{
-
+  .nav-names{
     text-decoration: none;
-    align-items: center;
   }
 
 
@@ -91,6 +93,16 @@ body{
     margin: 10px;
   }
 
+  .video-ad{
+    padding: 10px;
+    /* max-width: 100%;
+    max-height: 100%; */
+    /* width: 50%;
+    height: 50%; */
+    width: 25%;
+    height: 25%;
+  }
+
   .about{
     display: flex;
     flex-direction: column;
@@ -126,9 +138,10 @@ body{
   
   .services{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     width: 100%;
     padding: 20px;
+    text-decoration: none;
   }
 
   .item{
@@ -146,8 +159,40 @@ body{
 
   .footer{
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     background-color: orange;
     padding: 15px 0px;
+    color: white;
+  }
+
+  .social-media-platforms{
+    display: flex;
+  
+    margin-top: 10px;
+
+    cursor: pointer;
+    font-size: 20px;
+    color: #fff;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 3px;
+    margin-bottom: 5px;
+    text-decoration: none;
+    
+  }
+
+  .facebook{
+    color: white;
+    margin: 0 5px;
+  }
+  
+  .instagram{
+    color: white;
+    margin: 0 5px;
+  }
+
+  @media screen and (min-width : 768px ) {
+    
   }

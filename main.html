@@ -8,7 +8,7 @@
     <link rel="shortcut icon" href="https://scontent-jnb2-1.xx.fbcdn.net/v/t39.30808-6/240928990_6735472483144987_1199016904208750560_n.png?_nc_cat=100&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeFY-70XcOn6OuCuAFXY8AGmfHH55BX6Wsx8cfnkFfpazIbTABknod8bFYoOnrj2ve8tzJSmhINdFFvyFJ0RLjM1&_nc_ohc=aUSx3KIfq8oQ7kNvgFhErkc&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=AebqTmhA59wwQK9_LR8xITW&oh=00_AYC5cA2wXqljT9k1oFuAi1dU5FJFJFgmAj_fftONfDiYrw&oe=673ADB77" type="image/x-icon">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
-    
+
 </head>
 
 <body>
@@ -31,17 +31,20 @@
     
             <span class="top-right-sidebar">
                 <i class="material-symbols-outlined">home</i>
-                HOME
+                <a href="/main.html" target="_blank" class="nav-names">HOME</a>
+                
             </span>
     
             <span class="top-right-sidebar">
                 <i class="material-symbols-outlined">person</i>
-                ABOUT
+
+               <a href="#about-us-info" target="_blank" class="nav-names"> ABOUT </a>
+
             </span>
     
             <span class="top-right-sidebar">
                 <i class="material-symbols-outlined">mail</i>
-                <a href="get-in-touch.html" target="_blank"  > SUBCRIPTION </a>
+                <a href="get-in-touch.html" target="_blank" class="nav-names" > SUBCRIPTION </a>
             </span>
         </div>
         
@@ -63,11 +66,19 @@
            <h3 class="slogan"> Comfort food in the heart of Pretoria </h3>
         </div>
 
+        <div class="video-ad">
+
+            <video autoplay muted>
+                <source src="./Assets/ad.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+            </video>
+        </div>
+
         <div class="about">
 
             <div class="about-us-text">
-                <h1>About Us</h1>
-                <h3>Orange Restuarant is a restuarant thats situated a walking distance from Loftus Versfeld, Free secure parking, Free Wifi. Open to hotel guests and the public for Breakfast, lunch & dinner.</h3>
+                <h1 id="about-us-info">About Us</h1>
+                <h4>Orange Restaurant (@orange_restaurant_pta) showcases the offerings of a stylish dining spot located at the Court Classique Hotel in Arcadia, Pretoria. Known for its relaxed and inviting atmosphere, Orange Restaurant specializes in breakfast, light meals, mixed grills, and South African cuisine. The venue offers options for open-air dining on the patio and private events in its wine cellar, which can accommodate intimate gatherings.he restaurant is open daily with specific hours for breakfast, lunch, and dinner, and provides complimentary parking and free Wi-Fi to guests. For more information, you can explore their Instagram page or visit their website at Court Classique Hotel</h4>
 
             </div>
 
@@ -85,6 +96,39 @@
     </div>
 
     <div class="services">
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://scontent-jnb2-1.xx.fbcdn.net/v/t1.6435-9/131923832_5460732343952347_2192443329841181248_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=7b2446&_nc_eui2=AeECi1MwbPqapqyT2HibOc7cdRHM3XZ6dTB1Eczddnp1MKWPu816o97uNbHh09iGRHj47hBHlKohDP_myJVuuCzr&_nc_ohc=ODBEVVPgyAYQ7kNvgG8BKt6&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=AnS2j-ocDGwc9RPDzt5fl2W&oh=00_AYB8ZCT5jidMER570hswraQPIX5rt8N-KhQZDHhzOOl_mg&oe=676327CF" alt="">
+            <div class="card-body">
+                <h5 class="card-title">FOOD AVAILABLE.</h5>
+                <p class="card-text">Open for Breakfast, Lunch & Dinner</p>
+                <a href="/get-in-touch.html" target="_blank" class="btn btn-primary">SUBSCRIBE</a>
+            </div>
+        </div>
+        
+        <div class="card" style="width: 18rem;">
+            <img src="https://scontent-jnb2-1.xx.fbcdn.net/v/t1.6435-9/95065760_4358127050879554_2787448365107904512_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=13d280&_nc_eui2=AeHcGGnH-qBbVTWnv4iDH2VWpA3GPKEgqzSkDcY8oSCrNI89ZvLzo7hmEXR1g4ipnJWR647f3Dw-Px74vKWsWA_S&_nc_ohc=i4xVaC_9124Q7kNvgFnFrUo&_nc_zt=23&_nc_ht=scontent-jnb2-1.xx&_nc_gid=ATm-hiuyBqP_9jbqyY14vG_&oh=00_AYCmA15ZdPvKPsY1SPUYVoHOjhCoLupczs4WGrElbmvBgQ&oe=67631A89" alt="" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title">INTERNET ACCESS</h5>
+              <p class="card-text">Free WiFi to all Patrons. </p>
+              <a href="/get-in-touch.html" target="_blank" class="btn btn-primary">SUBSCRIBE</a>
+            </div>
+        </div>
+        
+
+        
+        <div class="card" style="width: 18rem;">
+            <img src="/Assets/a-section-of-the-parking.jpg" alt="">
+            <div class="card-body">
+                <h5 class="card-title">SECURITY</h5>
+                <p class="card-text">Free, secure parking within the hotel grounds.</p>
+                <a href="/get-in-touch.html" target="_blank" class="btn btn-primary">SUBSCRIBE</a>
+            </div>
+        </div>
+        
+    </div>
+
+    <!-- <div class="services">
 
 
         <div class="item">
@@ -109,7 +153,7 @@
         </div>
 
     
-    </div>
+    </div> -->
 
     <div class="footer">
 
@@ -119,9 +163,18 @@
 
             <span class="facebook">
 
+                <a href="https://www.facebook.com/OrangeRestaurantPretoria" target="_blank">
+                    <i class="bi bi-facebook">
+                    </i>
+                </a>
             </span>
 
             <span class="instagram">
+
+                <a href="https://www.instagram.com/orange_restaurant_pta/" target="_blank">
+                    <i class="bi bi-instagram"></i>
+                </a>
+                
 
             </span>
 
