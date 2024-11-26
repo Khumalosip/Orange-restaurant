@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/* General Reset */
+body {
+    margin: 0;
+    font-family: "Roboto", serif;
+    background-color: #f8f9fa;
+}
+
+/* Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ffa500;
+    color: #f8f9fa;
+    padding: 10px 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+.business-logo img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.name-of-company h1 {
+    color: white;
+    font-size: 1.8rem;
+    letter-spacing: 2px;
+}
+
+.right-sidebar {
+    display: flex;
+    gap: 20px;
+}
+
+.right-sidebar .top-right-sidebar {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.right-sidebar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0 15px;
+    align-items: center;
+  }
+
+/* Banner Section */
+.banner-contact img {
+    width: 100%;
+    height: auto;
+    margin-top: 10px;
+}
+
+/* Form Section */
+.container-fluid {
+    padding: 30px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+}
+
+label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    display: block;
+    color: #333;
+}
+
+.form-control {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-check-label {
+    margin-left: 5px;
+}
+
+.btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #ffa500;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+
+}
+
+.btn:hover {
+    background-color: #ff8c00;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    background-color: #ffa500;
+    padding: 20px;
+    color: white;
+    margin-top: 20px;
+}
+
+
+
+.social-media-platforms i {
+    font-size: 1.5rem;
+    color: white;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .right-sidebar {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .about {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .services {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .welcome-message h2 {
+        font-size: 1.5rem;
+    }
+
+    .welcome-message h3 {
+        font-size: 1rem;
+    }
+
+    .about-us-text h1 {
+        font-size: 1.5rem;
+    }
+
+    .card img {
+        height: 150px;
+    }
+}
